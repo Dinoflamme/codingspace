@@ -1,0 +1,205 @@
+:root {
+  --build-color1: #333;
+  --build-color2: #fff;
+  --main-color1: #00b4d8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--build-color1);
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: var(--build-color1);
+    color: var(--build-color2);
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 28%;
+    
+}
+
+
+header h1 {
+    font-size: 2.5em;
+    
+}
+
+
+header a:hover {
+    color: var(--main-color1); /* Couleur de survol */
+    transform: scale(1.1); /* Lien agrandi au survol */
+    border-bottom: 2px solid var(--main-color1);; /* Ligne en bas au survol */
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1em;
+}
+
+
+nav ul li {
+    margin: 0 1em;
+}
+
+
+nav ul li a {
+    color: var(--build-color2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#àpropos, #projets, #contact, #accueil {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Section des projets */
+section {
+    padding: 2em;
+    margin: 1em 0;
+}
+
+
+/* Titre des projets*/
+h2 {
+    color: var(--build-color1);
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+
+#projets {
+    padding: 2em;
+    background-color: #f9f9f9;
+  }
+  
+  #projets h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: var(--build-color1);
+  }
+  
+  .projet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    background-color: var(--build-color2);
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+  }
+  
+  .projet-description {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .projet-description h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--main-color1);
+  }
+  
+  .projet-description p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .projet-image {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .projet-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+/* Block des contacts*/
+#contact {
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: var(--build-color1);
+  }
+  
+  .contact-info {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .contact-info p {
+    margin: 0.5em 0;
+  }
+  
+  .contact-info a {
+    color: var(--main-color1);
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+/* Pied de page et réseaux sociaux */
+  #footer {
+    background-color: var(--build-color1);
+    color: var(--build-color2);
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  #footer p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Effet au survol */
+  .social-links a:hover {
+    transform: scale(1.1);
+  }
+  
